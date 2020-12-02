@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
       getSupportFragmentManager().beginTransaction().replace(R.id.linearlay,new Hamyon()).commit();
 
-        // FIXME: 02.12.2020 uxaxaxaxaxa
+        // FIXME: 02.12.2020 uxaxaxaxaxa7
 
 
 
