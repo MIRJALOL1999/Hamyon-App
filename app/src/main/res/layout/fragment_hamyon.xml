@@ -14,10 +14,12 @@
        android:layout_height="wrap_content"
        app:cardCornerRadius="8dp"
       app:cardElevation="25dp"
+       android:id="@+id/cardview"
       app:cardUseCompatPadding="true">
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
+
         android:orientation="vertical">
 
         <TextView
@@ -37,10 +39,11 @@
      </LinearLayout>
    </androidx.cardview.widget.CardView>
 
-   <ImageView
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerview"
        android:layout_width="match_parent"
-       android:layout_height="180dp"
-         android:layout_centerInParent="true"
-       android:src="@drawable/home"></ImageView>
+       android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+       android:layout_below="@+id/cardview"></androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
