@@ -9,8 +9,13 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
+
+
 
 
 
@@ -21,9 +26,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bottomNavigationView = findViewById(R.id.bottomnavigationview);
 
+
+
+
+
+
+
+
       getSupportFragmentManager().beginTransaction().replace(R.id.linearlay,new Hamyon()).commit();
 
         // FIXME: 02.12.2020 uxaxaxaxaxa7
+
+
 
 
 
@@ -35,12 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.item1:
+                        item.setChecked(true);
                         Toast.makeText(MainActivity.this, "Hamyon", Toast.LENGTH_SHORT).show();
 
                         getSupportFragmentManager().beginTransaction().replace(R.id.linearlay,new Hamyon()).commit();
 
                         break;
                     case R.id.item2:
+
                         Toast.makeText(MainActivity.this, "Haftalik", Toast.LENGTH_SHORT).show();
                         getSupportFragmentManager().beginTransaction().replace(R.id.linearlay,new Haftalik()).commit();
                         break;

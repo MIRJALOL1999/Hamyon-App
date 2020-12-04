@@ -23,16 +23,18 @@
         android:orientation="vertical">
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="65dp"
-            android:text="168 000"
+            android:text="5600"
             android:gravity="center"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:textSize="25dp"
+
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
            android:text="sum"></TextView>
@@ -43,7 +45,7 @@
        android:id="@+id/recyclerview"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginTop="25dp"
+       android:layout_marginTop="55dp"
        android:layout_below="@+id/cardview"></androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
