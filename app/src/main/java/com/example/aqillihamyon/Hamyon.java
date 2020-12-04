@@ -31,7 +31,7 @@ public class Hamyon extends Fragment {
         models.add(new Model(R.drawable.phonendoscope,"Sog`lik"));
         models.add(new Model(R.drawable.internet,"Internet"));
         models.add(new Model(R.drawable.jumper,"Kiyim"));
-        models.add(new Model(R.drawable.car,"Mashinam"));
+        models.add(new Model(R.drawable.car,"Mashina"));
 
         recyclerView=view.findViewById(R.id.recyclerview);
         myAdapter=new MyAdapter(getContext(),models);
