@@ -35,7 +35,7 @@ public class Hamyon extends Fragment {
 
         recyclerView=view.findViewById(R.id.recyclerview);
         myAdapter=new MyAdapter(getContext(),models);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
         recyclerView.setAdapter(myAdapter);
 
 
